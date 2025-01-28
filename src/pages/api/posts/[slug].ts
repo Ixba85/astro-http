@@ -1,7 +1,7 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { getEntry } from 'astro:content';
 
-export const prerender = false;
+export const prerender = true;
 
 export const GET: APIRoute = async ({ params, request }) => {
   const { slug } = params;
